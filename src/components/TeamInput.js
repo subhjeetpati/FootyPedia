@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import PlayerDetail from './PlayerDetail'
+import TeamDetail from './TeamDetail'
 
-const PlayerInput = () => {
+const TeamInput = () => {
   const [name, setName] = useState('')
   const [canSearch, setCanSearch] = useState(false)
 
@@ -21,7 +21,7 @@ const PlayerInput = () => {
                 type='text'
                 id='Name'
                 name='Name'
-                placeholder='Enter Player Name'
+                placeholder='Enter Team Name'
                 value={name}
                 onChange={(e) => {
                   setName(e.target.value)
@@ -38,7 +38,7 @@ const PlayerInput = () => {
               Search
             </button>
           </form>
-          <PlayerDetail name={name} />
+          <TeamDetail name={name} />
         </div>
       </>
     )
@@ -54,7 +54,7 @@ const PlayerInput = () => {
               type='text'
               id='Name'
               name='Name'
-              placeholder='Enter Player Name'
+              placeholder='Enter Team Name'
               value={name}
               onChange={(e) => {
                 setName(e.target.value)
@@ -76,4 +76,4 @@ const PlayerInput = () => {
   )
 }
 
-export default PlayerInput
+export default TeamInput

@@ -1,13 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main {
+  width: fit-content;
+}
+
+body,
+article {
+  background: rgb(194, 226, 194);
+}
+
+@media only screen and (min-width: 600px) {
+  .home-body {
+    background-image: url(./img/pexels-mario-cuadros-2413089.jpeg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100% 100%;
+  }
+
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-title {
+    font-size: 4.5rem;
+    z-index: 2;
+  }
+
+  .home-subtitle {
+    font-size: 2rem;
+    z-index: 2;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-body {
+    background-image: url(./img/pexels-furknsaglam-3131406.jpeg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100% 100%;
+  }
+
+  .home-text {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-title {
+    color: #fff;
+    font-size: 4.5rem;
+    text-shadow: black 0px 0px 10px;
+  }
+
+  .home-subtitle {
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: black 0px 0px 15px;
+  }
+}
+
+.home-body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30vh;
+  margin-left: 0%;
+}
+
+.home-btn {
+  margin: 3px;
+  padding: 10%;
+  width: 200px;
+  font-weight: 600;
+  text-shadow: #5dd2b3 0px 0px 10px;
+}
+
+.full-window {
+  width: 100%;
+  height: 100vh;
+}
+.player-form {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+  margin-left: 5rem;
+}
+.form-control {
+  width: 100%;
+}
+
+.input-form {
+  width: 150%;
+}
+
+.btn-form {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Player Detail */
+
+.item-head {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  align-self: center;
+}
+.item-value {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+  height: fit-content;
+}
+
+.pic .social {
+  margin-left: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.player-detail-item {
+  margin: 0rem 3rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rw {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50%;
+  width: 100%;
+}
+
+.dates {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.db1 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.db2 {
+  width: 90%;
+}
+
+.db1-semi {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.player-detail-description {
+  margin: 0rem 3rem;
+  padding: 0.5rem 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
 }
